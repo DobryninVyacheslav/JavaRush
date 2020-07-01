@@ -32,8 +32,10 @@ public class FileConsoleWriter {
 
     public static void main(String[] args) {
         try {
-            Path resourceDirectory = Paths.get("src/main/resources" +
-                    FileConsoleWriter.class.getPackageName().replaceAll("^ru|.", "/") + "file.txt");
+            Path resourceDirectory = Paths.
+                    get("src/main/resources" +
+                    FileConsoleWriter.class.getPackageName().
+                            replaceAll("^ru\\.|\\.|$", "/") + "file.txt");
             FileConsoleWriter writer = new FileConsoleWriter(resourceDirectory.toAbsolutePath().toString());
             writer.write("privet".toCharArray(), 1,2);
             writer.close();
