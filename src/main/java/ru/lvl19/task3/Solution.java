@@ -3,6 +3,8 @@ package ru.lvl19.task3;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.nodes.Entities;
+import org.jsoup.parser.Parser;
 import org.jsoup.select.Elements;
 import java.io.BufferedReader;
 import java.io.File;
@@ -13,13 +15,18 @@ import java.io.InputStreamReader;
 public class Solution {
     public static void main(String[] args) {
         try {
-            BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-            String fileName = reader.readLine();
-            reader.close();
-            FileReader fileReader = new FileReader(fileName);
+            BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
+            BufferedReader fileReader = new BufferedReader(new FileReader(consoleReader.readLine()));
+            StringBuilder stringBuilder = new StringBuilder();
+            String line;
+
+            while ((line = fileReader.readLine()) != null) {
+                stringBuilder.append(line);
+            }
+            consoleReader.close();
             fileReader.close();
-            File file = new File(fileName);
-            Document document = Jsoup.parse(file,"utf-8");
+
+            Document document = Jsoup.parse(stringBuilder.toString(),"utf-8", Parser.xmlParser());
             document.outputSettings().prettyPrint(false);
             Elements elements = document.select(args[0]);
             for (Element element : elements) {
