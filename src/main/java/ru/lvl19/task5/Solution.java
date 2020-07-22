@@ -7,7 +7,6 @@ import java.util.*;
 
 public class Solution {
     public static void main(String[] args) {
-        args[0] = "D:\\Program Data\\IdeaProjects\\JavaRush\\src\\main\\resources\\lvl19\\task5\\file.txt";
         try (BufferedReader fileReader = new BufferedReader(new FileReader(args[0]))) {
             Map<String, Double> map = getMap(fileReader);
             double maxValue = getMaxValue(map);
