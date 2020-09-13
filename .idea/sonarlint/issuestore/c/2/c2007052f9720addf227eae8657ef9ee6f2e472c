@@ -1,0 +1,12 @@
+
+S	java:S106A"9Replace this use of System.out or System.err by a logger.(™ã¹¸úÿÿÿÿ
+P
+java:S1128"5Remove this unused import 'java.nio.charset.Charset'.(ü¶ØŸıÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(Áß‡Ü
+H
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ
+S	java:S1062"9Replace this use of System.out or System.err by a logger.(ƒ£¨ùÿÿÿÿ
+S	java:S106F"9Replace this use of System.out or System.err by a logger.(Õ¬Ìùÿÿÿÿ
+M	java:S106<"9Replace this use of System.out or System.err by a logger.(ƒÚáB
+D
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ

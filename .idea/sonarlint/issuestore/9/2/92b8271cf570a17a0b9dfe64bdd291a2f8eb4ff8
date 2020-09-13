@@ -1,0 +1,17 @@
+
+M
+java:S1128"2Remove this unused import 'javax.xml.crypto.Data'.(¦¿çˆýÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¨«•¯ûÿÿÿÿ
+Q	java:S125!"<This block of commented-out lines of code should be removed.(ö®˜ï
+8
+java:S2386"Make this member "protected".(Æ€ôÍúÿÿÿÿ
+S
+java:S1854"=Remove this useless assignment to local variable "formatter".(°„Ôý
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èýÿÿÿÿ
+t
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Æ€ôÍúÿÿÿÿ
+D
+java:S1481".Remove this unused "formatter" local variable.(°„Ôý
+Q	java:S125"<This block of commented-out lines of code should be removed.(ù§þµ
+V	java:S125#"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
