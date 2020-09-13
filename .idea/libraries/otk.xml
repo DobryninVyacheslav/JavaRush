@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="otk">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/otk.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
