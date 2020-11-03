@@ -1,4 +1,4 @@
-package ru.lvl19.task8WordsWithNumbers;
+package ru.lvl19.lecture11.task8WordsWithNumbers;
 
 import java.io.*;
 

@@ -1,4 +1,4 @@
-package ru.lvl20.task2;
+package ru.lvl20.lecture3.task2;
 
 import java.util.Date;
 

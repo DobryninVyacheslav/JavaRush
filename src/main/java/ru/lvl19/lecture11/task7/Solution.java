@@ -1,4 +1,4 @@
-package ru.lvl19.task7;
+package ru.lvl19.lecture11.task7;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

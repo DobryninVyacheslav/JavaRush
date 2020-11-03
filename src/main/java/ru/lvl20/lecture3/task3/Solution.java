@@ -1,4 +1,4 @@
-package ru.lvl20.task3;
+package ru.lvl20.lecture3.task3;
 
 import java.io.*;
 import java.util.HashMap;
