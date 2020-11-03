@@ -7,12 +7,8 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-Ищем нужные строки
-*/
-
 public class Solution {
-    public static List<String> words = new ArrayList<>();
+    public static final List<String> words = new ArrayList<>();
 
     static {
         words.add("файл");
@@ -37,8 +33,9 @@ public class Solution {
                     }
                 }
 
-                if (countWords == 2)
+                if (countWords == 2) {
                     System.out.println(line);
+                }
                 countWords = 0;
             }
         }
