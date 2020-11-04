@@ -1,4 +1,4 @@
-package ru.lvl19.task6;
+package ru.lvl19.lecture11.task6;
 
 public enum TestEnum {
     KEK(5,20),

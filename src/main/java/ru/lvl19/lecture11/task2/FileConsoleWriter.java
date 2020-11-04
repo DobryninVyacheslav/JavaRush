@@ -1,11 +1,8 @@
-package ru.lvl19.task2;
+package ru.lvl19.lecture11.task2;
 
 import java.io.*;
-import java.net.URL;
-import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Arrays;
 
 public class FileConsoleWriter {
     private FileWriter fileWriter;

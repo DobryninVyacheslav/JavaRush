@@ -1,13 +1,11 @@
-package ru.lvl19.task3;
+package ru.lvl19.lecture11.task3;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import org.jsoup.nodes.Entities;
 import org.jsoup.parser.Parser;
 import org.jsoup.select.Elements;
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileReader;
 import java.io.InputStreamReader;
 

@@ -1,4 +1,4 @@
-package ru.lvl20.task1;
+package ru.lvl20.lecture3.task1;
 
 public class Asset {
     public Asset(String name, double price) {

@@ -1,4 +1,4 @@
-package ru.lvl19.task6;
+package ru.lvl19.lecture11.task6;
 
 import org.apache.http.HttpResponse;
 import org.apache.http.auth.AuthScope;
@@ -9,11 +9,7 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.BasicCredentialsProvider;
 import org.apache.http.impl.client.HttpClientBuilder;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.nio.charset.StandardCharsets;
 
 public class Xml {
     public static void main(String[] args) {
