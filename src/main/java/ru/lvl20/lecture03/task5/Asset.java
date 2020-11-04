@@ -1,9 +1,8 @@
-package ru.lvl20.lecture3.task1;
+package ru.lvl20.lecture03.task5;
 
 public class Asset {
-    public Asset(String name, double price) {
+    public Asset(String name) {
         this.name = name;
-        this.price = price;
     }
 
     private String name;
@@ -17,6 +16,10 @@ public class Asset {
         return price;
     }
 
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -26,6 +29,7 @@ public class Asset {
 
         if (Double.compare(asset.price, price) != 0) return false;
         return name != null ? name.equals(asset.name) : asset.name == null;
+
     }
 
     @Override

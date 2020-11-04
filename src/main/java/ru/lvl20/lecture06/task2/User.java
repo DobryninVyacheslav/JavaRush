@@ -1,8 +1,9 @@
-package ru.lvl20.lecture3.task2;
+package ru.lvl20.lecture06.task2;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class User {
+public class User implements Serializable {
     private String firstName;
     private String lastName;
     private Date birthDate;
@@ -49,44 +50,19 @@ public class User {
         this.country = country;
     }
 
-    public static enum Country {
+    public enum Country {
         UKRAINE("Ukraine"),
         RUSSIA("Russia"),
         OTHER("Other");
 
         private String name;
 
-        private Country(String name) {
+        Country(String name) {
             this.name = name;
         }
 
         public String getDisplayName() {
             return this.name;
         }
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        User user = (User) o;
-
-        if (isMale != user.isMale) return false;
-        if (firstName != null ? !firstName.equals(user.firstName) : user.firstName != null) return false;
-        if (lastName != null ? !lastName.equals(user.lastName) : user.lastName != null) return false;
-        if (birthDate != null ? !birthDate.equals(user.birthDate) : user.birthDate != null) return false;
-        return country == user.country;
-
-    }
-
-    @Override
-    public int hashCode() {
-        int result = firstName != null ? firstName.hashCode() : 0;
-        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
-        result = 31 * result + (birthDate != null ? birthDate.hashCode() : 0);
-        result = 31 * result + (isMale ? 1 : 0);
-        result = 31 * result + (country != null ? country.hashCode() : 0);
-        return result;
     }
 }

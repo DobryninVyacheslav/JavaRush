@@ -1,4 +1,4 @@
-package ru.lvl20.lecture3.task4;
+package ru.lvl20.lecture03.task4;
 
 import java.io.*;
 
