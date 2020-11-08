@@ -28,7 +28,7 @@ public class Solution implements Serializable, Runnable{
      * Для этого необходимо объявить методы:
      * private void writeObject(ObjectOutputStream out) throws IOException
      * private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException
-     * Теперь сериализация/десериализация пойдет по нашему сценарию :)
+     * Теперь сериализация/десериализация пойдет по нашему сценарию
      */
     private void writeObject(ObjectOutputStream out) throws IOException {
         out.defaultWriteObject();
