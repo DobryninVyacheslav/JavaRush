@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Solution {
-    public static List<String> words = new ArrayList<>();
+    public static final List<String> words = new ArrayList<>();
 
     static {
         words.add("файл");
