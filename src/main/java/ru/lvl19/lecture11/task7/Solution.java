@@ -16,6 +16,7 @@ public class Solution {
         words.add("В");
     }
 
+
     public static void main(String[] args) throws IOException {
         try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
             BufferedReader reader = new BufferedReader(new FileReader(consoleReader.readLine()))) {
