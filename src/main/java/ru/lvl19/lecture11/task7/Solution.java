@@ -17,26 +17,16 @@ public class Solution {
     }
 
     public static void main(String[] args) throws IOException {
-        try (BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-             BufferedReader reader = new BufferedReader(new FileReader(console.readLine()))) {
-            int countWords = 0;
-            String[] values;
-            String line;
-            while (reader.ready()) {
-                line = reader.readLine();
-                values = line.split(" ");
-
-                for (int i = 0; i < values.length; i++) {
-                    for (int j = 0; j < words.size(); j++) {
-                        if (values[i].equals(words.get(j)))
-                            countWords++;
-                    }
+        try (BufferedReader consoleReader = new BufferedReader(new InputStreamReader(System.in));
+            BufferedReader reader = new BufferedReader(new FileReader(consoleReader.readLine()))) {
+            while(reader.ready()) {
+                String line = reader.readLine();
+                String[] wordsInLine = line.split(" ");
+                int count = 0;
+                for (String s : wordsInLine) {
+                    if (words.contains(s)) count++;
                 }
-
-                if (countWords == 2) {
-                    System.out.println(line);
-                }
-                countWords = 0;
+                if (count == 2) System.out.println();
             }
         }
     }

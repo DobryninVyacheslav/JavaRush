@@ -1,4 +1,4 @@
-package ru.lvl19.lecture11.task9ReplaceNumbers;
+package ru.lvl19.lecture11.task9;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
